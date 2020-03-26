@@ -5,7 +5,8 @@
   "author": "leonardossev",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "mongoose": "^5.9.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
