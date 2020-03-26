@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
+    "cors": "^2.8.5",
     "mongoose": "^5.9.6"
   },
   "devDependencies": {
