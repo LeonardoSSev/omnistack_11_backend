@@ -4,6 +4,9 @@
   "description": "Backend da aplicação desenvolvida na Omnistack 11, feita pela Rocketseat.",
   "author": "leonardossev",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "cors": "^2.8.5",
