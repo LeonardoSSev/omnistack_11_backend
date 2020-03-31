@@ -2,7 +2,9 @@ const IncidentService = require('../services/IncidentService');
 
 module.exports = {
   async index(request, response) {
-    const incidents = await IncidentService.findAll();
+    const { limit = 5, page = 1 } = request.query;
+
+    const incidents = await IncidentService.findAll(limit, page);
 
     return response.send(incidents);
   },

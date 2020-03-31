@@ -5,8 +5,8 @@ module.exports = {
     return await IncidentRepository.findByOng(ongId)
   },
 
-  async findAll() {
-    return await IncidentRepository.findAll();
+  async findAll(limit, page) {
+    return await IncidentRepository.findAll(limit, page);
   },
 
   async store({ ongId, title, description, value }) {

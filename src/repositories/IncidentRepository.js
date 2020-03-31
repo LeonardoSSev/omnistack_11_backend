@@ -16,8 +16,11 @@ module.exports = {
       .first();
   },
 
-  findAll() {
-    return connection('incidents').select('*');
+  findAll(limit, page) {
+    return connection('incidents')
+      .select('*')
+      .limit(limit)
+      .offset((page - 1) * limit);
   },
 
   store({ ongId, title, description, value }) {
