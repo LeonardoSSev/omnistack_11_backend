@@ -8,12 +8,6 @@ module.exports = {
       response.status(401).send('Não foi encontrado nenhum id de ONG.');
     }
 
-    const ong = await OngService.findOng(ongId);
-
-    if (!ong) {
-      response.status(401).send('Não foi encontrada nenhuma ong com o id fornecido');
-    }
-
     next();
   }
 }
