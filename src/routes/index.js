@@ -9,5 +9,6 @@ routes.get('/ongs', AuthMiddleware.verifyOng, OngController.index);
 routes.post('/ongs', OngController.store);
 
 routes.get('/incidents', AuthMiddleware.verifyOng, IncidentController.index);
+routes.post('/incidents', AuthMiddleware.verifyOng, IncidentController.store);
 
 module.exports = routes;
