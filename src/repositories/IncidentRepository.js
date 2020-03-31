@@ -1,6 +1,12 @@
 const connection = require('../database/connection');
 
 module.exports = {
+  findByOng(ongId) {
+    return connection('incidents')
+      .select('*')
+      .where('ong_id', ongId);
+  },
+
   findById(id) {
     return connection('incidents')
       .select('*')

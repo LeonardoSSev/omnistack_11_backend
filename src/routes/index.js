@@ -3,6 +3,7 @@ const AuthMiddleware = require('../middlewares/AuthMiddleware');
 const OngController = require('../controllers/OngController');
 const IncidentController = require('../controllers/IncidentController');
 const SessionController = require('../controllers/SessionController');
+const ProfileController = require('../controllers/ProfileController');
 
 const routes = new Router();
 
@@ -15,4 +16,5 @@ routes.get('/incidents', AuthMiddleware.verifyOng, IncidentController.index);
 routes.post('/incidents', AuthMiddleware.verifyOng, IncidentController.store);
 routes.delete('/incidents/:id', AuthMiddleware.verifyOng, IncidentController.destroy);
 
+routes.get('/profile', AuthMiddleware.verifyOng, ProfileController.index);
 module.exports = routes;

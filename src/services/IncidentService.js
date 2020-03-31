@@ -1,6 +1,10 @@
 const IncidentRepository = require('../repositories/IncidentRepository');
 
 module.exports = {
+  async findFromOng(ongId) {
+    return await IncidentRepository.findByOng(ongId)
+  },
+
   async findAll() {
     return await IncidentRepository.findAll();
   },
