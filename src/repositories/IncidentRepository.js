@@ -12,5 +12,12 @@ module.exports = {
       value,
       ong_id: ongId
     });
+  },
+
+  delete(id) {
+    return connection('incidents').where({
+      id
+    })
+    .del();
   }
 };
