@@ -1,6 +1,15 @@
 const connection = require('../database/connection');
 
 module.exports = {
+  findById(id) {
+    return connection('incidents')
+      .select('*')
+      .where({
+        id
+      })
+      .first();
+  },
+
   findAll() {
     return connection('incidents').select('*');
   },
@@ -14,10 +23,7 @@ module.exports = {
     });
   },
 
-  delete(id) {
-    return connection('incidents').where({
-      id
-    })
-    .del();
+  delete(incident) {
+    return connection('incidents').where('id', incident.id).delete();
   }
 };
