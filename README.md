@@ -2,7 +2,7 @@
 
 ## PT-BR
 
-Esse repositório contém o projeto de backend desenvolvido com base na Omnistack 11 realizada pela Rocketseat.
+Esse repositório contém o projeto de backend desenvolvido com base na Omnistack 11 realizada pela [Rocketseat](https://rocketseat.com.br/).
 
 Neste repositório você deve encontrar um código um pouco diferente em relação ao que foi desenvolvido pela Rocketseat. A estrutura do projeto e outras funcionalidades foram desenvolvidas de outra forma para refletir um projeto mais profissional.
 
