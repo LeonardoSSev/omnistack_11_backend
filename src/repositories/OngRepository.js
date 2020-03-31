@@ -3,7 +3,7 @@ const connection = require('../database/connection');
 module.exports = {
   findById(ongId) {
     return connection('ongs')
-      .select('name')
+      .select('*')
       .where({ id: ongId })
       .first();
   },
